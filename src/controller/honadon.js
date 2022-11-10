@@ -21,7 +21,7 @@ export const getOneHonadon = async (req, res) => {
     const honadon = await Honadon.findById(req.params.id);
     res
       .status(200)
-      .json({ message: "successfully get are Honadon", data: honadon });
+      .json({ message: "successfully get are Honadon", data: honadon});
   } catch (error) {
     res.status(500).json({
       message: error.message,
